@@ -177,5 +177,3 @@ Este proyecto integrador permite afianzar tres pilares de la programación:
 - 🧠 **Resolución de problemas reales** como búsqueda binaria, factorial o Fibonacci.
 
 Además, se pone en práctica el diseño modular del código, la reutilización de funciones, la entrada de datos con `Scanner` y el análisis de la eficiencia de los algoritmos.
-
-> 💡 **Siguiente paso sugerido:** explorar estructuras dinámicas como `ArrayList`, o conceptos como recursividad con árboles.
