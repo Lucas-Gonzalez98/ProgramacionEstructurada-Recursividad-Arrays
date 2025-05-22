@@ -1,56 +1,165 @@
-# ProgramacionEstructurada-Recursividad-Arrays
-Actividad 4 de Programacion Estructurada
+💻 Proyecto Java – Arrays, Recursividad e Iteración
+Este proyecto reúne tres mini-proyectos desarrollados con el objetivo de comprender conceptos clave de la programación estructurada en Java. Cada sección aborda un tema fundamental que todo programador debe dominar: arrays, recursividad e iteración. A través de ejemplos prácticos y comparativos, se busca fomentar el aprendizaje mediante la experimentación con código real.
 
-Este repositorio ofrece una exploración teórica detallada sobre dos pilares de la programación: la recursividad y los arrays. Cada concepto se aborda en su propia carpeta, complementado con ejemplos prácticos implementados en Java.
+📚 Índice
+🔢 Arrays
 
-## Contenido del Repositorio
+🔄 Recursividad vs Iteración
 
-El repositorio se estructura en las siguientes carpetas, cada una dedicada a un tema específico:
+🔍 Recursividad con Arrays
 
-1.  **`recursividad/`**: Contiene una explicación exhaustiva del concepto de recursividad, la distinción entre recursividad e iteración, y una introducción a problemas clásicos que se resuelven de manera elegante con esta técnica.
-2.  **`arrays/`**: Ofrece una descripción detallada de la estructura de datos array, sus características fundamentales y los diversos tipos de datos que pueden almacenar.
-3.  **`arrays_con_recursividad/`**: Presenta una discusión sobre cómo los arrays pueden combinarse con la recursividad para resolver problemas eficientes, utilizando la búsqueda binaria como caso de estudio principal.
+✅ Conclusión general
 
-A continuación, se resume el contenido teórico esperado en cada carpeta:
+🔢 Parte 1: Arrays
+🧠 ¿Qué son los arrays?
+Un array (o arreglo) es una estructura de datos que permite almacenar múltiples valores del mismo tipo bajo un solo nombre de variable. Cada elemento del array se accede mediante un índice numérico, comenzando desde 0.
 
----
+🎯 Objetivo de esta sección
+Entender cómo se crean arrays de distintos tipos (enteros, decimales, caracteres, cadenas, booleanos).
 
-### `recursividad/`
+Saber cómo recorrerlos y acceder a sus elementos.
 
-Esta sección se enfoca en el paradigma de la **recursividad**. Se define la recursividad como una técnica donde una función se invoca a sí misma para descomponer un problema en instancias más pequeñas hasta alcanzar un caso base resoluble directamente.
+Aprender a modificar valores y trabajar con arrays dinámicos.
 
-Se exploran las **diferencias fundamentales entre la recursividad y la iteración**, analizando sus respectivas estructuras de control, el manejo de la memoria (pila de llamadas vs. bucles), la legibilidad en ciertos escenarios y las consideraciones de rendimiento. Se discuten las situaciones típicas donde la recursividad ofrece una solución natural y concisa, en contraposición a los enfoques iterativos.
+Usar métodos para imprimir contenido de arrays reutilizando código.
 
-Finalmente, se introducen **ejemplos clásicos de problemas que se abordan recursivamente**, como el cálculo del factorial, la suma de dígitos, la secuencia de Fibonacci y el problema de las Torres de Hanoi. Se explica la lógica recursiva detrás de la solución de estos problemas, aunque los detalles de la implementación en Java se encuentran en los archivos correspondientes dentro de esta carpeta.
+🛠️ Lo que vas a encontrar
+Arrays estáticos y dinámicos.
 
----
+Bucles for tradicionales para recorrer arrays.
 
-### `arrays/`
+Uso de la clase Scanner para ingresar datos.
 
-Esta sección se dedica al concepto de **arrays**. Se define un array como una colección finita y ordenada de elementos del mismo tipo, almacenados en ubicaciones de memoria contiguas y accesibles mediante un índice.
+Creación de arrays de números aleatorios.
 
-Se destacan las **características principales de los arrays**, incluyendo su almacenamiento contiguo, la posibilidad de tener un tamaño fijo (dependiendo del lenguaje), y la eficiencia del acceso aleatorio a sus elementos en tiempo constante.
+Métodos personalizados para imprimir arrays de cualquier tipo.
 
-Se describe la **versatilidad de los arrays para almacenar diferentes tipos de datos**, desde tipos primitivos (enteros, números de punto flotante, caracteres, booleanos) hasta objetos y, en el caso de arrays multidimensionales, otros arrays. Se mencionan ejemplos conceptuales de cómo se pueden declarar arrays para distintos tipos de datos, aunque la sintaxis específica en Java se ilustra en los ejemplos de código de la carpeta.
+🧪 Ejemplo de uso básico
+java
+Copiar
+Editar
+int[] numeros = {10, 20, 30};
+System.out.println("Primer número: " + numeros[0]); // Imprime 10
 
----
+numeros[0] = 99; // Modificamos el valor
+System.out.println("Nuevo valor: " + numeros[0]); // Imprime 99
+🔍 Lo más destacado
+Evitamos repetir código creando métodos reutilizables como imprimirArray(int[] array).
 
-### `arrays_con_recursividad/`
+Aprendimos a generar arrays de tamaño dinámico utilizando Scanner para pedirle al usuario cuántos elementos desea ingresar.
 
-Esta sección explora la **sinergia entre los arrays y la recursividad**, demostrando cómo se pueden combinar estas dos herramientas para diseñar algoritmos eficientes.
+Introducimos la clase Random para generar valores aleatorios.
 
-Se toma la **búsqueda binaria** como un ejemplo paradigmático. Se explica cómo este algoritmo, diseñado para encontrar un elemento en un array **ordenado**, puede implementarse de forma recursiva. Se describe el proceso de dividir repetidamente el espacio de búsqueda a la mitad, comparando el elemento central con el valor objetivo y realizando una llamada recursiva en la sub-sección relevante del array.
+✅ Conclusión
+Los arrays permiten gestionar colecciones de datos de manera ordenada y eficiente. Son el primer paso para entender estructuras más complejas como listas, pilas o colas.
 
-Se analiza la **eficiencia de la búsqueda binaria recursiva**, destacando su complejidad logarítmica en el tiempo de ejecución ($\mathcal{O}(\\log n)$). También se mencionan los **requisitos previos** para su correcto funcionamiento (un array ordenado) y se realiza una breve comparación conceptual con su contraparte iterativa en términos de claridad y posible sobrecarga de memoria debido a las llamadas recursivas. Los detalles de la implementación recursiva de la búsqueda binaria en Java se encuentran en los archivos de código dentro de esta carpeta.
+🔄 Parte 2: Recursividad vs Iteración
+🔁 ¿Qué es la iteración?
+La iteración consiste en repetir un bloque de código mediante estructuras como for, while o do...while. Es un enfoque directo y eficiente para resolver muchos problemas.
 
------
+🔂 ¿Qué es la recursividad?
+La recursividad implica que un método se llama a sí mismo para resolver un problema. Es útil cuando un problema puede dividirse en subproblemas más pequeños del mismo tipo.
 
-**¡Explora el Código!**
+🎯 Objetivo de esta sección
+Comprender las diferencias conceptuales entre recursividad e iteración.
 
-Para comprender completamente la aplicación práctica de los conceptos explicados en este `README`, te invitamos a explorar los archivos `.java` contenidos en cada una de las carpetas. Estos ejemplos de código ilustran de manera concreta las ideas teóricas presentadas aquí.
+Implementar funciones matemáticas clásicas (factorial y Fibonacci) con ambos enfoques.
 
------
+Analizar ventajas y desventajas de cada uno.
 
-**Contribuciones**
+📦 Implementaciones desarrolladas
+➕ Factorial
+java
+Copiar
+Editar
+// Iterativo
+int factorialIterativo(int n) {
+    int resultado = 1;
+    for (int i = 1; i <= n; i++) {
+        resultado *= i;
+    }
+    return resultado;
+}
 
-Cualquier comentario, sugerencia o identificación de posibles mejoras a las explicaciones teóricas es bienvenido. ¡Tu feedback es valioso para enriquecer este proyecto!
+// Recursivo
+int factorialRecursivo(int n) {
+    if (n == 0) return 1;
+    return n * factorialRecursivo(n - 1);
+}
+➗ Fibonacci
+java
+Copiar
+Editar
+// Iterativo
+int fibonacciIterativo(int n) {
+    if (n <= 1) return n;
+    int a = 0, b = 1;
+    for (int i = 2; i <= n; i++) {
+        int temp = a + b;
+        a = b;
+        b = temp;
+    }
+    return b;
+}
+
+// Recursivo
+int fibonacciRecursivo(int n) {
+    if (n <= 1) return n;
+    return fibonacciRecursivo(n - 1) + fibonacciRecursivo(n - 2);
+}
+📊 Comparación
+Criterio	Recursividad	Iteración
+Legibilidad	Más elegante y concisa	Más explícita y clara
+Rendimiento	Menor (por llamadas)	Mayor (uso de bucles)
+Riesgo de error	StackOverflow	Menor
+
+✅ Conclusión
+Ambos enfoques son válidos. La elección depende del problema, la eficiencia esperada y la claridad que se desea en el código. Conocer ambos permite mayor flexibilidad y creatividad al programar.
+
+🔍 Parte 3: Recursividad + Arrays
+🧩 ¿Qué es la búsqueda binaria?
+Es un algoritmo que permite buscar un elemento en un array ordenado dividiendo el espacio de búsqueda en mitades sucesivas. Es mucho más eficiente que buscar uno por uno.
+
+🎯 Objetivo
+Aplicar recursividad para resolver un problema sobre arrays.
+
+Entender cómo dividir un problema en subproblemas más pequeños.
+
+Consolidar los conocimientos sobre arrays y recursividad.
+
+🔎 Código de búsqueda binaria recursiva
+java
+Copiar
+Editar
+int busquedaBinaria(int[] array, int inicio, int fin, int objetivo) {
+    if (inicio > fin) return -1; // No se encontró el número
+    int medio = (inicio + fin) / 2;
+    if (array[medio] == objetivo) return medio;
+    if (objetivo < array[medio]) {
+        return busquedaBinaria(array, inicio, medio - 1, objetivo);
+    } else {
+        return busquedaBinaria(array, medio + 1, fin, objetivo);
+    }
+}
+📌 Consideraciones
+El array debe estar ordenado previamente.
+
+La eficiencia del algoritmo es O(log n), mucho mejor que la búsqueda secuencial (O(n)).
+
+La implementación recursiva es clara, pero también se puede hacer iterativa.
+
+✅ Conclusión
+La recursividad se puede aplicar no solo a funciones matemáticas, sino también a algoritmos más avanzados como búsquedas, recorridos de estructuras, etc. Esto abre las puertas a resolver problemas más complejos con elegancia.
+
+✅ Conclusión general
+Este proyecto integrador permite afianzar tres pilares de la programación:
+
+🔢 Manejo de arrays, para almacenar y manipular datos en grupo.
+
+🔄 Comprensión de recursividad e iteración, aprendiendo cuándo y cómo usar cada técnica.
+
+🧠 Resolución de problemas reales como búsqueda binaria, factorial o Fibonacci.
+
+Además, se pone en práctica el diseño modular del código, la reutilización de funciones, la entrada de datos con Scanner y el análisis de la eficiencia de los algoritmos.
+
+💡 Siguiente paso sugerido: explorar estructuras dinámicas como ArrayList, o conceptos como recursividad con árboles.
